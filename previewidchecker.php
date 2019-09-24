@@ -5,5 +5,5 @@
 
 
     }else{
-        header("Location: humboldtbrasil.com");
+        header("Location: ../newLandingPage");
     }
