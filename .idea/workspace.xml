@@ -4,6 +4,7 @@
     <list default="true" id="15ac125b-6d54-4688-9ba5-0d0ace6e1ac1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/previewidchecker.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Humboldt" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,7 +57,20 @@
       <option name="presentableId" value="Default" />
       <updated>1569171687989</updated>
       <workItem from="1569171689385" duration="12012000" />
+      <workItem from="1569367918124" duration="1628000" />
+      <workItem from="1569682578190" duration="3652000" />
+      <workItem from="1569773574825" duration="12000" />
+      <workItem from="1569952742283" duration="2000" />
+      <workItem from="1570052267404" duration="359000" />
     </task>
+    <task id="LOCAL-00001" summary="uns negocio louco">
+      <created>1569367945065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569367945065</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -67,10 +81,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="uns negocio louco" />
+    <option name="LAST_COMMIT_MESSAGE" value="uns negocio louco" />
   </component>
 </project>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Preview Humboldt Brasil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://d3dhayegfge90.cloudfront.net/icons/humb.png" rel="icon" type="image/png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
@@ -61,13 +62,7 @@
     <div class="mt-auto">
         <button class="float-right btn btn-outline-success text-white font-weight-light btn-sm">Get your preview id</button>
     </div>
-    <footer class="container-footer container mastfoot">
-        <div class="inner text-center">
-            <p style="font-size: 0.5rem">&copy; 2019, Humboldt Brasil. All rights reserved. All information included in this website and its attachments are confidential and are the intellectual property and business secret of Humboldt Brasil. You is granted access to the information solely for the purpose of knowledge, and third-party compatibility without the express prior permission of Humboldt Brasil is prohibited.</p>
-        </div>
-    </footer>
 </div>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -83,7 +78,18 @@
                 text: 'Preencha seu email!',
             })
         }else{
-           window.location.replace("http://localhost/newLandingPage");
+            $.ajax({
+                url: 'http://humboldtbrasil.com/preview/checkpreviewid.php',
+                method: 'post',
+                data: {p_id: name},
+                success: function () {
+                    Swal.fire({
+                        type: 'success',
+                        title: 'Acesso autenticado...',
+                        text: 'Iremos te redirecionar pro preview da Humboldt Brasil',
+                    })
+                }
+            });
         }
     });
 </script>
